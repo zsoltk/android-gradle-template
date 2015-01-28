@@ -20,13 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".databaseexample.DatabaseActivity_" />
-        <activity android:name=".restexample.RestActivity_" />
-
-        <provider
-            android:name="com.example.provider.AgendaProvider"
-            android:authorities="com.example.provider"
-            android:exported="false" />
 
     </application>
 </manifest>
