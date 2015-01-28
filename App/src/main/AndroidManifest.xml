@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:name=".ExampleApplication"
+        android:name=".App"
         android:label="TemplateApp">
 
         <activity android:name=".main.MainActivity_">

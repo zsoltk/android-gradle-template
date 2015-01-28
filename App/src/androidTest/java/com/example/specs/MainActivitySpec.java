@@ -7,11 +7,11 @@ import com.example.test.support.EspressoSpec;
 import com.example.test.support.pages.StartPage;
 
 @LargeTest
-public class ExampleAppSpec extends EspressoSpec<MainActivity_> {
+public class MainActivitySpec extends EspressoSpec<MainActivity_> {
 
     StartPage startPage = new StartPage();
 
-    public ExampleAppSpec() {
+    public MainActivitySpec() {
         super(MainActivity_.class);
     }
 
