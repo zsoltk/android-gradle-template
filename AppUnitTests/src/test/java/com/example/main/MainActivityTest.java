@@ -1,7 +1,5 @@
 package com.example.main;
 
-import android.widget.Button;
-
 import com.example.R;
 import com.example.test.support.UnitTestSpecification;
 
@@ -20,9 +18,6 @@ public class MainActivityTest extends UnitTestSpecification {
     MainPresenter presenter;
 
     MainActivity_ view = Robolectric.buildActivity(MainActivity_.class).create().get();
-
-    Button database;
-    Button rest;
 
     @Before
     public void setUp() {
