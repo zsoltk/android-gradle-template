@@ -12,16 +12,4 @@
         android:layout_height="wrap_content"
         android:text="Hello Espresso!" />
 
-    <Button
-        android:id="@+id/database"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Database example" />
-
-    <Button
-        android:id="@+id/rest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rest example" />
-
 </LinearLayout>

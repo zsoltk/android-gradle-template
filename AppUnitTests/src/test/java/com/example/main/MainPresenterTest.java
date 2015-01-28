@@ -2,8 +2,6 @@ package com.example.main;
 
 import android.content.Intent;
 
-import com.example.databaseexample.DatabaseActivity_;
-import com.example.restexample.RestActivity_;
 import com.example.test.support.UnitTestSpecification;
 
 import org.junit.Before;
@@ -32,18 +30,7 @@ public class MainPresenterTest extends UnitTestSpecification {
     ArgumentCaptor<Intent> intentCaptor = ArgumentCaptor.forClass(Intent.class);
 
     @Test
-    public void shouldOpenDatabaseActivity() throws Exception {
-        presenter.onOpenDatabaseExample();
-        verify(view).startActivity(intentCaptor.capture());
-        Intent startedIntent = intentCaptor.getValue();
-        assertThat(startedIntent.getComponent().getClassName()).isEqualTo(DatabaseActivity_.class.getName());
-    }
-
-    @Test
-    public void shouldOpenRestActivity() throws Exception {
-        presenter.onOpenRestExample();
-        verify(view).startActivity(intentCaptor.capture());
-        Intent startedIntent = intentCaptor.getValue();
-        assertThat(startedIntent.getComponent().getClassName()).isEqualTo(RestActivity_.class.getName());
+    public void testDummy() {
+        assertThat(true).isEqualTo(true);
     }
 }

@@ -11,6 +11,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 
+import static org.fest.assertions.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 
 public class MainActivityTest extends UnitTestSpecification {
@@ -27,19 +28,10 @@ public class MainActivityTest extends UnitTestSpecification {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         view.presenter = presenter;
-        database = (Button) view.findViewById(R.id.database);
-        rest = (Button) view.findViewById(R.id.rest);
     }
 
     @Test
-    public void shouldDelegateDatabaseButtonClick() throws Exception {
-        database.performClick();
-        verify(presenter).onOpenDatabaseExample();
-    }
-
-    @Test
-    public void shouldDelegateRestButtonClick() throws Exception {
-        rest.performClick();
-        verify(presenter).onOpenRestExample();
+    public void testDummy() {
+        assertThat(true).isEqualTo(true);
     }
 }

@@ -1,7 +1,5 @@
 package com.example.test.support;
 
-import com.example.restexample.BookmarkAdapter;
-
 import org.junit.runners.model.InitializationError;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.SdkConfig;
@@ -29,8 +27,10 @@ public class CustomRobolectricTestRunner extends RobolectricTestRunner {
 
         public boolean shouldInstrument(ClassInfo classInfo) {
             boolean shoudInstrument = setup.shouldInstrument(classInfo);
+
             return shoudInstrument
-                    || classInfo.getName().equals(BookmarkAdapter.class.getName());
+//                    || classInfo.getName().equals(SomeClass.class.getName())
+            ;
         }
     }
 }

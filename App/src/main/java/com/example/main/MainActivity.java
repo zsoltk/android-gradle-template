@@ -13,14 +13,4 @@ public class MainActivity extends Activity {
 
     @Bean
     MainPresenter presenter;
-
-    @Click(R.id.database)
-    public void onDatabaseButton() {
-        presenter.onOpenDatabaseExample();
-    }
-
-    @Click(R.id.rest)
-    public void onRestButton() {
-        presenter.onOpenRestExample();
-    }
 }
