@@ -77,6 +77,12 @@ dependencies {
     compile 'com.android.support:support-v13:21.0.3'
     compile 'com.android.support:support-v4:21.0.3'
 
+    // ---------
+
+    compile 'com.jakewharton.timber:timber:2.5.1'
+
+    // ---------
+
     apt "org.androidannotations:androidannotations:" + androidAnnotationsVersion
     compile("org.androidannotations:androidannotations-api:" + androidAnnotationsAPIVersion )
 
