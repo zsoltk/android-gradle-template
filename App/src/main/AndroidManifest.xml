@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          android:versionCode="2"
-          android:versionName="1.0.0-SNAPSHOT"
           package="com.example">
-
-    <uses-sdk android:minSdkVersion="11"
-              android:targetSdkVersion="19"/>
-
-    <!-- remove this permission if no network communication necessary -->
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".App"
-        android:label="TemplateApp">
+        android:label="TemplateApp"
+        android:allowBackup="true">
 
         <activity android:name=".main.MainActivity_">
             <intent-filter>
