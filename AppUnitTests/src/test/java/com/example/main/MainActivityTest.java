@@ -1,5 +1,6 @@
 package com.example.main;
 
+import android.widget.Button;
 import com.example.R;
 import com.example.test.support.UnitTestSpecification;
 
@@ -19,14 +20,18 @@ public class MainActivityTest extends UnitTestSpecification {
 
     MainActivity_ view = Robolectric.buildActivity(MainActivity_.class).create().get();
 
+    private Button testButton;
+
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         view.presenter = presenter;
+        testButton = (Button) view.findViewById(R.id.testButton);
     }
 
     @Test
     public void testDummy() {
-        assertThat(true).isEqualTo(true);
+        testButton.performClick();
+        verify(presenter).alert();
     }
 }

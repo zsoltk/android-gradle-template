@@ -3,7 +3,7 @@ package com.example.test.support;
 import android.content.Context;
 
 import org.junit.Before;
-import org.robolectric.Robolectric;
+import org.robolectric.RuntimeEnvironment;
 
 import java.io.File;
 
@@ -13,7 +13,7 @@ public abstract class DatabaseSpecification extends UnitTestSpecification {
 
     @Before
     public void initContext() {
-        context = Robolectric.application;
+        context = RuntimeEnvironment.application;
         resetDatabase();
     }
 
